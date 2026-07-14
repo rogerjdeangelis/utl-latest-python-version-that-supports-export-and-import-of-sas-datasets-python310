@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_inout_export",
+  "source_file": "utl-latest-python-version-that-supports-export-and-import-of-sas-datasets-python310.sas",
+  "source_blob_sha": "072f845a59b47644820b7f4ec2df578a5d96fd08",
+  "source_commit": "9ec227510e436e518beeebdcbba0cfc6d6b0633a",
+  "notes": "The note's central DATA step builds sd1.inout (do x=1 to 10; y=x*82; output) and prints it before the PROC PYTHON export/import round-trip. Kept the DATA step and PROC PRINT verbatim, retargeted the external 'd:/sd1' libname to WORK so it runs standalone. Output reproduces the original 10-obs X/Y table exactly (82,164,...,820). The Altair-SLC PROC PYTHON round-trip is platform-specific and not part of this bundle."
+}
